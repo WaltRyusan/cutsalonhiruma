@@ -5,28 +5,46 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>料金表｜CUT SALON HIRUMA｜駒込</title>
   <meta name="description" content="CUT SALON HIRUMA の料金表。カット、パーマ、カラー、シェービングエステ、着付けなど。">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Shippori+Mincho+B1:wght@500;700&family=Zen+Kaku+Gothic+New:wght@400;700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
   <div class="pole"></div>
 
-  <header>
-    <p class="name"><a href="./">CUT SALON<br>HIRUMA</a></p>
-    <p class="sub">駒込の理美容院</p>
+  <header class="site-header">
+    <div class="inner">
+      <a class="logo" href="./">CUT SALON <span>HIRUMA</span></a>
+      <nav>
+        <a href="./#about">当店について</a>
+        <a href="./#service">メニュー</a>
+        <a href="price.html" aria-current="page">料金表</a>
+        <a href="./#access">アクセス</a>
+        <a href="./#contact">お問い合わせ</a>
+      </nav>
+    </div>
   </header>
 
-  <nav>
-    <a href="./">ホーム</a>
-    <a href="price.html" aria-current="page">料金表</a>
-    <a href="./#access">店舗所在地</a>
-    <a href="./#contact">お問い合わせ</a>
-  </nav>
+  <div class="hero small">
+    <div class="inner">
+      <h1 class="en">PRICE</h1>
+      <p class="ja">料金表</p>
+    </div>
+  </div>
 
-  <main>
-    <h1 class="page-title">料金表</h1>
+  <section style="padding-bottom:0">
+    <nav class="category-nav">
+      <a href="#special">スペシャルメニュー</a>
+      <a href="#cut">カット</a>
+      <a href="#perm">パーマ</a>
+      <a href="#color">カラー</a>
+    </nav>
+  </section>
 
-    <section id="special">
-      <h2>スペシャルメニュー</h2>
+  <section id="special">
+    <div class="price-block">
+      <h2>スペシャルメニュー<span class="en">SPECIAL</span></h2>
       <ul class="menu">
         <li>
           <div class="head"><span class="title">シェービングエステ</span><span class="price">3,000円</span></div>
@@ -72,10 +90,12 @@
 訪問着付けは行っておりません</p>
         </li>
       </ul>
-    </section>
+    </div>
+  </section>
 
-    <section id="cut">
-      <h2>カット</h2>
+  <section id="cut" class="alt">
+    <div class="price-block">
+      <h2>カット<span class="en">CUT</span></h2>
       <ul class="menu">
         <li>
           <div class="head"><span class="title">大人</span><span class="price">3,300円</span></div>
@@ -108,10 +128,12 @@
           <p class="detail">バリカン使用</p>
         </li>
       </ul>
-    </section>
+    </div>
+  </section>
 
-    <section id="perm">
-      <h2>パーマ</h2>
+  <section id="perm">
+    <div class="price-block">
+      <h2>パーマ<span class="en">PERM</span></h2>
       <ul class="menu">
         <li>
           <div class="head"><span class="title">パーマ</span><span class="price">6,500円</span></div>
@@ -119,10 +141,12 @@
           <p class="detail">カット/シャンプー込み</p>
         </li>
       </ul>
-    </section>
+    </div>
+  </section>
 
-    <section id="color">
-      <h2>カラー</h2>
+  <section id="color" class="alt">
+    <div class="price-block">
+      <h2>カラー<span class="en">COLOR</span></h2>
       <ul class="menu">
         <li>
           <div class="head"><span class="title">カラーリング</span><span class="price">5,500円</span></div>
@@ -136,11 +160,24 @@
 (カット/シャンプーは含まれません)</p>
         </li>
       </ul>
-    </section>
+    </div>
+  </section>
 
-  </main>
+  <section class="contact">
+    <div class="container">
+      <p>ご不明な点はお気軽にお問い合わせください。</p>
+      <div class="buttons">
+        <a class="button red" href="https://forms.gle/vRZttSiJEfqaqAT56" target="_blank" rel="noopener">お問い合わせフォーム</a>
+        <a class="button outline" href="tel:0339109549">03-3910-9549</a>
+      </div>
+    </div>
+  </section>
 
+  <footer>
+    <a class="logo" href="./">CUT SALON <span>HIRUMA</span></a>
+    <div>東京都豊島区駒込7-16-10</div>
+    <div>© CUT SALON HIRUMA</div>
+  </footer>
   <div class="pole"></div>
-  <footer>© CUT SALON HIRUMA</footer>
 </body>
 </html>
