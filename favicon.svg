@@ -1,0 +1,14 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64">
+  <defs>
+    <!-- サインポールの斜めストライプ -->
+    <pattern id="s" width="24" height="24" patternUnits="userSpaceOnUse" patternTransform="rotate(-45)">
+      <rect width="24" height="24" fill="#fff"/>
+      <rect width="6" height="24" fill="#b3242c"/>
+      <rect x="12" width="6" height="24" fill="#1b2a4a"/>
+    </pattern>
+    <clipPath id="c"><rect x="22" y="8" width="20" height="48" rx="10"/></clipPath>
+  </defs>
+  <rect width="64" height="64" rx="14" fill="#1b2a4a"/>
+  <rect x="22" y="8" width="20" height="48" rx="10" fill="url(#s)" clip-path="url(#c)"/>
+  <rect x="22" y="8" width="20" height="48" rx="10" fill="none" stroke="#f5efe3" stroke-width="2.5"/>
+</svg>
